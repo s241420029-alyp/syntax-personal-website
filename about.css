@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('gua.jpg') center/cover no-repeat fixed;
+}
+
+header {
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #020617;
+}
+
+.logo {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #00ffae;
+}
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+}
+
+.about-container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 60px;
+
+    width: 100%;
+    max-width: 1400px;
+
+    background: rgba(2, 6, 23, 0.78);
+    padding: 50px;
+    border-radius: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.about-images {
+    flex: 0 0 420px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.about-images img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    transition: 0.4s ease;
+}
+
+.about-images img:hover {
+    transform: scale(1.03);
+}
+
+.about-text {
+    flex: 1;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-text h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    color: #cbd5e1;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.bio {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #334155;
+}
+
+.bio h3 {
+    color: #00ffae;
+    margin-bottom: 10px;
+}
+
+.bio p {
+    font-size: 14px;
+    color: #e2e8f0;
+    margin-bottom: 6px;
+}
+
+.extra {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #334155;
+}
+
+.extra h3 {
+    color: #00ffae;
+    margin-top: 12px;
+    margin-bottom: 6px;
+    font-size: 16px;
+}
+
+.extra p {
+    font-size: 14px;
+    color: #cbd5e1;
+    line-height: 1.6;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #020617;
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+@media (max-width: 1000px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-images {
+        flex: unset;
+        width: 100%;
+    }
+
+    .about-images img {
+        height: auto;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
